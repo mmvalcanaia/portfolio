@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --blue: #5280E2;
+    --cyan:#15CDCB;
+    --dark-blue: #212226;
+    --light-grey:#E0DEDE;
+
+    --menu-height: 75px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--dark-blue);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+p {
+    color: var(--light-grey);
+}
+
+button{
+    background: var(--blue);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header {
+    height: calc(100vh - var(--menu-height));
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(--cyan)
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--menu-height);
+    background: var(--dark-blue);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul a {
+    font-size: 24px;
+    color: var(--cyan);
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+section {
+    height: 1500px;
+    background-color: purple;
+}
