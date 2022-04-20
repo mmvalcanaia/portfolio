@@ -48,6 +48,14 @@ button{
     font-weight: bold;
 }
 
+.title-green{
+    color: var(--cyan);
+}
+
+.title-purple {
+    color: var(--blue);
+}
+
 header {
     height: calc(100vh - var(--menu-height));
     display: flex;
@@ -62,10 +70,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-header .container h1 {
-    color: var(--cyan)
 }
 
 header .container button {
@@ -105,9 +109,23 @@ nav ul a svg {
     display: none;
 }
 
-section {
-    height: 1500px;
-    background-color: purple;
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.about-me .img-container img {
+    width: 70%;
 }
 
 @media (max-width: 1000px){
@@ -150,6 +168,10 @@ section {
     }
 
     nav {
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%;
         padding: 0 15px;
     }
 
