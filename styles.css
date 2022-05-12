@@ -165,6 +165,7 @@ nav ul a svg {
 .about-me .img-container img {
     width: 60%;
     height: 100%;
+    max-height: 700px;
     object-fit: cover;
 }
 
